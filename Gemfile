@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 4.2.7'
 gem 'unicorn'
 
 group :assets do
@@ -11,24 +11,10 @@ group :assets do
 end
 
 gem 'casino'
-gem 'casino-ldap_authenticator'
 gem 'casino-activerecord_authenticator'
-
 gem 'http_accept_language', '~> 2.0'
-
 gem 'whenever', :require => false
-
-group :sqlite do
-  gem 'sqlite3'
-end
-
-group :mysql do
-  gem 'mysql2'
-end
-
-group :postgres do
-  gem 'pg'
-end
+gem 'pg', '~> 0.18'
 
 group :development do
   gem 'capistrano', '~> 2.15'
